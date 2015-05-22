@@ -1,6 +1,6 @@
 desc 'Generates sample data in the database'
 task generate_data: :environment do
-  abort 'You have not passed the parameter!' if ENV['N'].empty?
+  abort 'You have not passed N parameter!' if ENV['N'].blank?
   Rake::Task['db:reset'].execute
   ENV['N'].to_i.times do
     address = Address.create(city: Faker::Address.city, street: Faker::Address.street_name)
