@@ -1,0 +1,6 @@
+<h1>Posts</h1>
+<% @posts.each do |post| %>
+  <p>
+    <strong><%= post.user.first_name %> from <%= post.user.address.city %></strong> <%= post.body %>
+  </p>
+<% end %>
