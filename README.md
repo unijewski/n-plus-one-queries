@@ -2,6 +2,8 @@
 
 This is an example of a solution to n + 1 queries problem which is described [here](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations). The application is available on [Heroku](https://secret-shelf-9574.herokuapp.com).
 
+You may use [Bullet](https://github.com/flyerhzm/bullet) gem to be notified when you should add eager loading. It's also recommended to watch the [RailsCast](http://railscasts.com/episodes/372-bullet).
+
 ## Generating sample data
 
 In a development environment:
